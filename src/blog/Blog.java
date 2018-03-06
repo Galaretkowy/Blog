@@ -2,6 +2,7 @@
 package blog;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.*;
 
 public class Blog {
@@ -36,14 +37,23 @@ public class Blog {
     }
     public Comment lastComment()
     {
-        for(Note note:notes)
-        {
-            for(Comment comment:note.getComments())
-            {
-                LocalDate date=comment.getData();
-                if(date.)
-            }
-        }
+      List<Comment> allComents=new ArrayList();
+      for(Note note:notes)
+      {
+          allComents.addAll(note.getComments());
+      }
+      Comment result= allComents.get(0);
+      for(Comment comment:allComents)
+      {
+          LocalDate d1= comment.getData();
+          LocalDate d2= result.getData();
+          if(d1.isAfter(d2))
+          {
+              result=comment;
+          }
+      }
+           
+       
     }
     public List<Comment> mostComments()
     {

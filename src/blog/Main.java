@@ -1,6 +1,9 @@
 
 package blog;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 
 public class Main {
     
@@ -17,6 +20,8 @@ public class Main {
         blog.add(note);
         
         Comment c1 = new Comment("jan","Kolekcje sa trudne");
+        LocalDate d1= LocalDate.of(2018, Month.MARCH, 3);
+        LocalDate d2= LocalDate.of(2017, Month.MAY, 21);
         
     }
     
