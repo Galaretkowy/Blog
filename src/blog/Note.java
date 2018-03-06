@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Wpisy {
+public class Note {
     
     private String title, content;
     private List<Comment> comments = new ArrayList();
     
-    public Wpisy(String title, String content){
+    public Note(String title, String content){
         this.title=title;
         this.content=content;
     }
@@ -18,6 +18,10 @@ public class Wpisy {
     public void add(Comment comment)
     {
         comments.add(comment);
+    }
+
+    public List<Comment> getComments() {
+        return comments;
     }
     
     public String toString()
@@ -29,5 +33,8 @@ public class Wpisy {
         sb.append("komentarze: "+comments);
         return sb.toString();
     }
-    
+    public int numberOfComments()
+    {
+        return comments.size();
+    }
 }

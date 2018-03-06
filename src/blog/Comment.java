@@ -31,20 +31,5 @@ public class Comment {
     {
         return author+": "+content+" ("+data+")";
     }
-    public Wpisy mostPopular()
-    {
-        return null;
-    }
-    public List<Wpisy> mostPopulars()
-    {
-        return null; 
-    }
-    public Comment lastComment()
-    {
-        return null;
-    }
-    public List<Comment> mostComments()
-    {
-        return null;
-    }
+   
 }

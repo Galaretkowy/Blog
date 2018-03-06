@@ -8,9 +8,9 @@ public class Main {
     {
         Blog blog = new Blog("Blog programistyczny");
         
-        Wpisy note = new Wpisy("Co novego w Java 9","Co novego w Java 9");
-        Wpisy note1 = new Wpisy("Kolekcje","Kolekcje");
-        Wpisy note2 = new Wpisy("Listy","Listy");
+        Note note = new Note("Co novego w Java 9","Co novego w Java 9");
+        Note note1 = new Note("Kolekcje","Kolekcje");
+        Note note2 = new Note("Listy","Listy");
         
         blog.add(note2);
         blog.add(note1);
